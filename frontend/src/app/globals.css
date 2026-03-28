@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1F3A;
+  --color-navy-light: #152D50;
+  --color-navy-dark: #071629;
+  --color-saffron: #F4801A;
+  --color-saffron-light: #F99540;
+  --color-saffron-dark: #D46A0E;
+  --color-cream: #FBF9F5;
+  --color-muted: #94A3B8;
+
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "DM Mono", monospace;
+
+  --animate-fade-up: fadeUp 0.5s ease forwards;
+  --animate-pulse-ring: pulseRing 1.5s ease-in-out infinite;
+  --animate-slide-in: slideIn 0.4s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseRing {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-6px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 2px;
+}
+
+.typing-dot:nth-child(1) {
+  animation: bounce 1s ease infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation: bounce 1s ease infinite 0.15s;
+}
+
+.typing-dot:nth-child(3) {
+  animation: bounce 1s ease infinite 0.3s;
+}
+
+.newspaper-bg {
+  background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.chat-glass {
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(8px);
+}
