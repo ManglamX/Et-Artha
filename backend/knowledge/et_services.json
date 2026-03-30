@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "id": "credit_card_leads",
+      "name": "ET Financial Services — Credit Cards",
+      "category": "services",
+      "description": "Compare and apply for top credit cards from HDFC, Axis, SBI, and ICICI through ET's financial services marketplace. Best offers and cashback deals.",
+      "ideal_archetypes": ["THE WEALTH BUILDER", "THE CAREFUL PLANNER"],
+      "ideal_interests": ["credit card", "cashback", "rewards", "HDFC", "Axis"],
+      "cta": "Compare cards",
+      "url": "https://economictimes.indiatimes.com/wealth/personal-finance-news"
+    },
+    {
+      "id": "fd_tracker",
+      "name": "ET Fixed Deposit Tracker",
+      "category": "services",
+      "description": "Compare FD rates across all major banks and NBFCs. Find highest interest rates for your investment tenure.",
+      "ideal_archetypes": ["THE CAREFUL PLANNER"],
+      "ideal_interests": ["FD", "fixed deposit", "safe investment", "interest rates", "Bajaj Finance"],
+      "cta": "Compare FD rates",
+      "url": "https://economictimes.indiatimes.com/wealth/invest/fixed-deposit"
+    }
+  ]
+}

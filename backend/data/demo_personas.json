@@ -1,0 +1,43 @@
+{
+  "personas": [
+    {
+      "name": "Riya",
+      "age": 28,
+      "intro": "Hi! I'm Riya. I'm a software engineer and I just started my first SIP last month.",
+      "archetype": "THE WEALTH BUILDER",
+      "profile": {
+        "archetype": "THE WEALTH BUILDER",
+        "profession": "Software Engineer",
+        "experience": "beginner",
+        "goal": "Build long-term wealth through SIPs",
+        "interests": ["SIP", "mutual funds", "tax saving", "financial planning"]
+      }
+    },
+    {
+      "name": "Vikram",
+      "age": 45,
+      "intro": "I'm Vikram, CFO at a manufacturing company. I follow global macro and M&A deals closely.",
+      "archetype": "THE CORNER OFFICE",
+      "profile": {
+        "archetype": "THE CORNER OFFICE",
+        "profession": "CFO",
+        "experience": "expert",
+        "goal": "Stay ahead of policy changes and industry shifts",
+        "interests": ["macro", "M&A", "policy", "leadership", "corporate strategy"]
+      }
+    },
+    {
+      "name": "Priya",
+      "age": 32,
+      "intro": "Hi, I'm Priya. I run a D2C startup. Just closed our seed round, now scaling.",
+      "archetype": "THE STARTUP SHERPA",
+      "profile": {
+        "archetype": "THE STARTUP SHERPA",
+        "profession": "Startup Founder",
+        "experience": "intermediate",
+        "goal": "Find Series A investors and track startup ecosystem",
+        "interests": ["startup", "funding", "VC", "D2C", "scaling", "entrepreneurship"]
+      }
+    }
+  ]
+}

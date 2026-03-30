@@ -1,0 +1,121 @@
+{
+  "products": [
+    {
+      "id": "et_prime",
+      "name": "ET Prime",
+      "category": "content",
+      "description": "Premium members-only business analysis platform with 70+ exclusive long-reads per month. Ad-free experience with deep dives on policy, markets, and corporate strategy.",
+      "ideal_archetypes": ["THE CORNER OFFICE", "THE MARKET MAVERICK", "THE WEALTH BUILDER"],
+      "ideal_professions": ["executive", "manager", "analyst", "investor", "consultant"],
+      "ideal_interests": ["policy", "business news", "market analysis", "strategy", "corporate"],
+      "price": "₹213/month (annual plan)",
+      "key_features": ["Ad-free reading", "70+ exclusive stories/month", "Expert analysis", "Portfolio-linked insights"],
+      "cta": "Start 30-day free trial",
+      "url": "https://economictimes.indiatimes.com/prime"
+    },
+    {
+      "id": "et_markets",
+      "name": "ET Markets",
+      "category": "finance",
+      "description": "Live BSE/NSE stock prices, Sensex/Nifty tracking, portfolio management, stock screener, and expert trading recommendations.",
+      "ideal_archetypes": ["THE MARKET MAVERICK", "THE WEALTH BUILDER"],
+      "ideal_professions": ["trader", "investor", "finance professional", "analyst"],
+      "ideal_interests": ["stocks", "trading", "nifty", "sensex", "portfolio", "equity", "derivatives"],
+      "price": "Free (premium features with ET Prime)",
+      "key_features": ["Live BSE/NSE prices", "Portfolio tracker", "Stock screener", "Market alerts"],
+      "cta": "Track your portfolio free",
+      "url": "https://economictimes.indiatimes.com/markets"
+    },
+    {
+      "id": "et_wealth",
+      "name": "ET Wealth",
+      "category": "finance",
+      "description": "Personal finance platform covering tax planning, mutual funds, insurance, retirement planning, and real estate investment guidance.",
+      "ideal_archetypes": ["THE WEALTH BUILDER", "THE CAREFUL PLANNER", "THE CURIOUS LEARNER"],
+      "ideal_professions": ["salaried professional", "engineer", "doctor", "teacher"],
+      "ideal_interests": ["tax", "mutual funds", "SIP", "insurance", "retirement", "home loan", "personal finance"],
+      "price": "Free",
+      "key_features": ["Tax planning guides", "SIP calculator", "Insurance comparisons", "Retirement planning"],
+      "cta": "Plan your finances free",
+      "url": "https://economictimes.indiatimes.com/wealth"
+    },
+    {
+      "id": "et_masterclass",
+      "name": "ET Masterclass",
+      "category": "education",
+      "description": "Executive education seminars conducted by PwC, KPMG, IIM faculty, and industry leaders. Topics include finance, leadership, strategy, and business transformation.",
+      "ideal_archetypes": ["THE CORNER OFFICE", "THE STARTUP SHERPA"],
+      "ideal_professions": ["CXO", "senior manager", "VP", "director", "entrepreneur"],
+      "ideal_interests": ["leadership", "strategy", "executive education", "business transformation", "networking"],
+      "price": "₹15,000 - ₹50,000 per workshop",
+      "key_features": ["PwC/KPMG experts", "IIM professors", "Certificate of completion", "Networking"],
+      "cta": "View upcoming masterclasses",
+      "url": "https://etmasterclass.economictimes.com"
+    },
+    {
+      "id": "et_edge",
+      "name": "ET Edge Summits",
+      "category": "events",
+      "description": "Industry-specific B2B conferences for sector leaders covering healthcare, logistics, manufacturing, retail, and more. Features policy makers, CXOs, and industry experts.",
+      "ideal_archetypes": ["THE CORNER OFFICE", "THE STARTUP SHERPA"],
+      "ideal_professions": ["CXO", "business head", "entrepreneur", "policy maker"],
+      "ideal_interests": ["conferences", "networking", "industry events", "B2B", "policy", "leadership"],
+      "price": "₹5,000 - ₹25,000 per event",
+      "key_features": ["Sector-specific content", "CXO networking", "Policy insights", "Industry awards"],
+      "cta": "See upcoming summits",
+      "url": "https://etedge.economictimes.com"
+    },
+    {
+      "id": "et_entrepreneur",
+      "name": "ET Entrepreneur Summit",
+      "category": "events",
+      "description": "Annual summit for startup founders, investors, and the startup ecosystem. Covers fundraising, scaling, government policy for startups, and VC perspectives.",
+      "ideal_archetypes": ["THE STARTUP SHERPA"],
+      "ideal_professions": ["founder", "co-founder", "startup employee", "VC", "angel investor"],
+      "ideal_interests": ["startup", "funding", "VC", "entrepreneurship", "product", "growth hacking", "pitch"],
+      "price": "₹3,000 - ₹10,000",
+      "key_features": ["Investor networking", "Pitch competitions", "Policy discussions", "Startup awards"],
+      "cta": "Register for next summit",
+      "url": "https://economictimes.indiatimes.com/small-biz"
+    },
+    {
+      "id": "et_money",
+      "name": "ET Money (Partner)",
+      "category": "services",
+      "description": "Commission-free direct mutual fund investments, insurance comparisons, and loan products. Integrated with ET for seamless financial product discovery.",
+      "ideal_archetypes": ["THE WEALTH BUILDER", "THE CAREFUL PLANNER", "THE CURIOUS LEARNER"],
+      "ideal_professions": ["salaried professional", "young professional", "first-time investor"],
+      "ideal_interests": ["SIP", "mutual funds", "direct plans", "goal investing", "tax saving", "ELSS"],
+      "price": "Free to use",
+      "key_features": ["Direct MF plans (0% commission)", "SIP automation", "Goal-based investing", "Tax filing"],
+      "cta": "Start investing with ₹500",
+      "url": "https://www.etmoney.com"
+    },
+    {
+      "id": "et_now",
+      "name": "ET Now",
+      "category": "content",
+      "description": "India's leading business and markets TV channel. Available for live streaming. Covers breaking market news, expert interviews, and economic analysis 24/7.",
+      "ideal_archetypes": ["THE MARKET MAVERICK", "THE CORNER OFFICE"],
+      "ideal_professions": ["trader", "investor", "business professional"],
+      "ideal_interests": ["live markets", "TV", "breaking news", "market commentary", "economic news"],
+      "price": "Free streaming",
+      "key_features": ["Live market coverage", "Expert interviews", "Breaking news", "Market close shows"],
+      "cta": "Watch live for free",
+      "url": "https://etnow.com"
+    },
+    {
+      "id": "et_portfolio",
+      "name": "ET Portfolio",
+      "category": "finance",
+      "description": "Free portfolio management and tracking tool. Link your demat account, track returns, get stock-specific news, and monitor your overall wealth.",
+      "ideal_archetypes": ["THE MARKET MAVERICK", "THE WEALTH BUILDER"],
+      "ideal_professions": ["investor", "trader", "finance enthusiast"],
+      "ideal_interests": ["portfolio", "returns", "stocks", "demat", "wealth tracking"],
+      "price": "Free",
+      "key_features": ["Demat account linking", "Real-time P&L", "Stock-specific news", "Tax reports"],
+      "cta": "Track your portfolio",
+      "url": "https://economictimes.indiatimes.com/markets/portfolio"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "gbs_2025",
+      "name": "ET Global Business Summit 2025",
+      "category": "flagship",
+      "description": "Asia's most prestigious leadership forum with 1000+ CXOs, policymakers, and global leaders. Annual flagship event of the Economic Times.",
+      "ideal_archetypes": ["THE CORNER OFFICE"],
+      "date": "March 2025",
+      "location": "New Delhi",
+      "price": "By invitation / ₹50,000+",
+      "url": "https://economictimes.indiatimes.com/gbs"
+    },
+    {
+      "id": "et_awards_2025",
+      "name": "ET Awards for Corporate Excellence",
+      "description": "India's most coveted business award recognizing outstanding corporate leaders and organizations.",
+      "ideal_archetypes": ["THE CORNER OFFICE", "THE STARTUP SHERPA"],
+      "date": "2025",
+      "location": "Mumbai",
+      "price": "By invitation",
+      "url": "https://economictimes.indiatimes.com/et-awards"
+    }
+  ]
+}
