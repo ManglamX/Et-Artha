@@ -80,20 +80,40 @@ async def chat(request: ChatRequest):
     prompt = f"{history_text}\n\nET Artha:"
 
     async def stream_response():
-        full_response = ""
+        try:
+            # Use Anuj's ConciergeAgent
+            from agent.concierge import ConciergeAgent
+            agent = ConciergeAgent(session)
+            result = await agent.process(request.message)
 
-        async for token in generate_stream(prompt):
-            full_response += token
-            yield f"data: {json.dumps({'token': token, 'done': False})}\n\n"
+            # Stream response token by token
+            text = result["response"]
+            for i in range(0, len(text), 3):
+                chunk = text[i:i+3]
+                yield f"data: {json.dumps({'token': chunk, 'done': False})}\n\n"
+                await asyncio.sleep(0.01)
 
-        # Save assistant reply to session
-        messages.append({"role": "assistant", "content": full_response})
-        await update_session(request.session_id, messages)
+            # Save everything to SQLite
+            await update_session(
+                request.session_id,
+                messages=result["messages"],
+                profile=result.get("profile"),
+                recommendations=result.get("recommendations", [])
+            )
 
-        # Tell frontend streaming is done
-        # profile_ready will become True once Anuj's agent sets profile in the session
-        profile_ready = session.get("profile") is not None
-        yield f"data: {json.dumps({'token': '', 'done': True, 'profile_ready': profile_ready})}\n\n"
+            # Signal frontend — include profile_ready flag
+            yield f"data: {json.dumps({'token': '', 'done': True, 'profile_ready': result.get('profile_complete', False)})}\n\n"
+
+        except Exception as e:
+            # Fallback to direct Ollama if agent fails
+            print(f"Agent error: {e}, falling back to direct Ollama")
+            full_response = ""
+            async for token in generate_stream(prompt):
+                full_response += token
+                yield f"data: {json.dumps({'token': token, 'done': False})}\n\n"
+            messages.append({"role": "assistant", "content": full_response})
+            await update_session(request.session_id, messages)
+            yield f"data: {json.dumps({'token': '', 'done': True, 'profile_ready': False})}\n\n"
 
     return StreamingResponse(
         stream_response(),

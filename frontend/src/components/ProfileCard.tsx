@@ -3,7 +3,8 @@ import { ARCHETYPE_META } from '@/lib/types'
 import { motion } from 'framer-motion'
 
 export function ProfileCard({ profile }: { profile: UserProfile }) {
-    const meta = ARCHETYPE_META[profile.archetype] || { icon: '✦', color: '#F4801A', tagline: 'Your ET financial profile' }
+    const archetype = profile?.archetype ?? ''
+    const meta = ARCHETYPE_META[archetype] || { icon: '✦', color: '#F4801A', tagline: 'Your ET financial profile' }
 
     return (
         <motion.div
@@ -21,7 +22,9 @@ export function ProfileCard({ profile }: { profile: UserProfile }) {
                         {meta.icon}
                     </div>
                     <div>
-                        <h2 className="font-serif text-xl leading-tight">{profile.archetype.replace('THE ', '')}</h2>
+                        <h2 className="font-serif text-xl leading-tight">
+                            {archetype ? archetype.replace('THE ', '') : 'Your Profile'}
+                        </h2>
                         <p className="text-xs text-muted mt-1">{meta.tagline}</p>
                     </div>
                 </div>
@@ -37,7 +40,7 @@ export function ProfileCard({ profile }: { profile: UserProfile }) {
                         </div>
                     ))}
                 </div>
-                {profile.interests?.length > 0 && (
+                {(profile.interests?.length ?? 0) > 0 && (
                     <div className="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-white/10">
                         {profile.interests.map(tag => (
                             <span key={tag} className="text-xs px-2 py-0.5 rounded-full font-mono"
